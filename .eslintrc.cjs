@@ -12,7 +12,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  overrides: [],
+
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -25,4 +25,10 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
   },
+  overrides: [
+    {
+      files: ['*.json', '*.json5'], // Specify the extension or pattern you want to parse as JSON.
+      parser: 'jsonc-eslint-parser', // Set this parser.
+    },
+  ],
 };
