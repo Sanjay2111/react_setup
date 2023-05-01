@@ -14,7 +14,6 @@
     "husky": "husky install"
   },
   "dependencies": {
-    "eslint-config-airbnb-typescript": "^17.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -27,6 +26,7 @@
     "@typescript-eslint/parser": "^5.59.1",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.2.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.25.3",
@@ -45,7 +45,7 @@
   "lint-staged": {
     "*.{ts,tsx,css,js}": [
       "prettier --write",
-      "eslint --cache --fix"
+      "eslint --fix"
     ]
   },
   "config": {

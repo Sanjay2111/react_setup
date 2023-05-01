@@ -17,7 +17,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "vite.config.ts",
@@ -25,9 +29,6 @@
     "commitlint.config.cjs",
     "src"
   ],
-  "baseUrl": "./",
-  "paths": {
-    "@/*": ["src/*"]
-  },
+
   "references": [{ "path": "./tsconfig.node.json" }]
 }
